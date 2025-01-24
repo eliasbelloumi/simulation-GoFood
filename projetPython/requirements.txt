@@ -1,0 +1,5 @@
+geopy==2.4.1
+networkx==3.3
+osmnx==1.9.4
+pandas==2.2.3
+Shapely==2.0.6

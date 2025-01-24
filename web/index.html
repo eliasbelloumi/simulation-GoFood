@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GOFOOD simulation</title>
+    <meta property="og:description" content="Use extrusions to display buildings' height in 3D." />
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://unpkg.com/deck.gl@latest/dist.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/svg+xml" href="foodIcon.svg" />
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js'></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="side">
+            <h1>GOFOOD Simulation</h1>
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="circle" style="background-color: orangered;"></div>
+                    <div class="legend-text">Deliverer</div>
+                </div>
+                <div class="legend-item">
+                    <div class="circle" style="background-color: #2ECC71;"></div>
+                    <div class="legend-text">Customer</div>
+                </div>
+                <div class="legend-item">
+                    <div class="circle" style="background-color: dodgerblue;"></div>
+                    <div class="legend-text">Restaurant</div>
+                </div>
+            </div>
+            <div class="button-container">
+                <button id="connect" class="button">
+                    Connect
+                    &nbsp;&nbsp;<span id="connected"
+                        style="border-radius: 50%; background-color: antiquewhite; width: 10px; height: 10px; display: inline-block;"></span>
+                </button>
+                <button id="moveToDeliverer" class="button">Move to deliverer</button>
+            </div>
+        </div>
+        <div>
+
+            <span class="subtitle">Simulation Infos</span>
+            <div id="simuInfoContent">
+                <p>Simulation Time: <span id="actualTime">-</span></p>
+                <p>Duration: <span id="duration">-</span></p>
+                <p>Acceleration: <span id="accelerationTime">-</span></p>
+                <p>Number of Deliverer: <span id="numDeliverer">-</span></p>
+                <p>Number of Restaurant: <span id="numRestau">-</span></p>
+                <p>Number of Customer: <span id="numCustomer">-</span></p>
+            </div>
+        </div>
+        <div class="statistic-container">
+            <span class="subtitle">Gojeck Statistics</span>
+            <div id="statisticsContent">
+                <p>Run Price Ratio: <span id="runPriceRatio">-</span></p>
+                <p>Money Made: <span id="moneyMade">-</span></p>
+                <p>Average Money Made By Order: <span id="averageMoneyMadeByOrder">-</span></p>
+                <p>Number of Order: <span id="numOrder">-</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <canvas id="myChart" width="800" height="400"></canvas>
+
+    <script src="./index.js"> </script>
+
+
+</body>
+
+</html>
