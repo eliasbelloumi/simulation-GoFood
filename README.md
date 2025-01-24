@@ -10,6 +10,8 @@ Pour cela, le projet simule les interactions entre clients, livreurs et gojek. L
 
 Les agents implémentent l'interface Agent. L'ensemble des agents tourne dans sa propre boucle de simulation éxécutée dans une goroutine indépendante. Les agents communiquent entre eux au travers de sync.Map et de channels. Les interactions entre agents telles qu'implémentées correspondent au diagramme ci-dessus.
 
+## Exemple d'éxécution
+![diagramme montrant la gestion d'une commande](doc/videos/lilleFastSimu.gif)
 
 ## Documentation du projet
 
