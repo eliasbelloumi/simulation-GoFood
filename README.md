@@ -8,6 +8,8 @@ Pour cela, le projet simule les interactions entre clients, livreurs et gojek. L
 
 ![diagramme montrant la gestion d'une commande](doc/diagrammes/cycle_commande.png)
 
+ <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><span property="dct:title">GOFood</span> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p> 
+ 
 Les agents implémentent l'interface Agent. L'ensemble des agents tourne dans sa propre boucle de simulation éxécutée dans une goroutine indépendante. Les agents communiquent entre eux au travers de sync.Map et de channels. Les interactions entre agents telles qu'implémentées correspondent au diagramme ci-dessus.
 
 ## Exemple d'éxécution
